@@ -1,0 +1,33 @@
+{
+  "name": "single-page-design-portfolio",
+  "version": "1.0.0",
+  "description": "This is a solution to the Single-page design portfolio challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects. ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelzaga/single-page-design-portfolio.git"
+  },
+  "author": "Miguel Zapata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelzaga/single-page-design-portfolio/issues"
+  },
+  "homepage": "https://github.com/miguelzaga/single-page-design-portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}

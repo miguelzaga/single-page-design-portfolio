@@ -1,11 +1,22 @@
+@use "./functions" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+
 // Colors
-:root {
-  --color-bg: lightcyan;
-}
+$color-violet: #755cde;
+$color-orange: #f6a560;
+$color-pink: #f39e9e;
+$color-red: #eb7575;
+$color-blue: #61c4b7;
+$color-purple: #61c4b7;
+$color-black: #030303;
+$color-gray: #7a746e;
+$color-cream: #fff7f0;
 
 // Fonts
-$font-family: Arial, Helvetica, sans-serif;
-$font-size: 16px;
+$font-family: "Plus Jakarta Sans", sans-serif;
+$font-size: rem(18px);
+$font-weight: 500;
 
 // Breakpoints
 $sm: 320px;

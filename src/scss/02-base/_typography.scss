@@ -2,5 +2,25 @@
 
 body {
   font-family: $font-family;
-  font-size: $font-size
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: 28px;
+}
+
+h1 {
+  font-size: rem(56px);
+  line-height: 70px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: rem(40px);
+  line-height: 51px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: rem(32px);
+  line-height: 40px;
+  font-weight: bold;
 }

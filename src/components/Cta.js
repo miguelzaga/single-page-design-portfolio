@@ -1,7 +1,7 @@
 function Cta() {
   return (
     <section className="cta">
-      <h4 className="cta__title">Book a call with me</h4>
+      <h2 className="cta__title">Book a call with me</h2>
       <p className="cta__text">
         {" "}
         I’d love to have a chat to see how I can help you. The best first step

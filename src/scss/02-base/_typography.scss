@@ -2,24 +2,38 @@
 
 body {
   font-family: $font-family;
-  font-size: $font-size;
   font-weight: $font-weight;
-  line-height: 28px;
+  color: $color-gray;
+  font-size: rem(16px);
+  line-height: 26px;
+
+  @include breakpoint($md) {
+    font-size: $font-size;
+    line-height: 28px;
+  }
 }
 
 h1 {
-  font-size: rem(56px);
-  line-height: 70px;
+  color: $color-black;
+  font-size: rem(36px);
+  line-height: 45px;
   font-weight: bold;
+
+  @include breakpoint($md) {
+    font-size: rem(56px);
+    line-height: 70px;
+  }
 }
 
 h2 {
+  color: $color-black;
   font-size: rem(40px);
   line-height: 51px;
   font-weight: bold;
 }
 
 h3 {
+  color: $color-black;
   font-size: rem(32px);
   line-height: 40px;
   font-weight: bold;

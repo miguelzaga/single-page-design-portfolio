@@ -1,0 +1,14 @@
+@use "./../01-abstracts/" as *;
+
+.skills {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    max-width: 285px;
+    margin: 0 auto 32px;
+  }
+}

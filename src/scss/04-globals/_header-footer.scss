@@ -1,0 +1,15 @@
+@use "./../01-abstracts/" as *;
+
+.header-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__img {
+    max-width: 48px;
+  }
+}
+
+.header {
+  margin-bottom: 32px;
+}

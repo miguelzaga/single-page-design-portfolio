@@ -4,6 +4,7 @@ button {
   border: none;
   cursor: pointer;
   transition: 0.2s ease-out;
+
   &:active {
     transform: scale(0.98);
   }
@@ -13,13 +14,19 @@ button {
 .btn2 {
   color: white;
   border-radius: 28px;
-  padding: 14px 45px;
+  padding: 8px 28px 8px 27px;
   font-weight: bold;
-  font-size: rem(16px);
+  font-size: rem(14px);
+
+  @include breakpoint($md) {
+    font-size: rem(16px);
+    padding: 14px 45px;
+  }
 }
 
 .btn1 {
   background-color: $color-black;
+
   &:hover {
     background-color: $color-red;
   }
@@ -27,6 +34,7 @@ button {
 
 .btn2 {
   background-color: $color-violet;
+
   &:hover {
     background-color: $color-orange;
   }

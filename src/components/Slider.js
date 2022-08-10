@@ -1,3 +1,6 @@
+import arrowLeft from "../assets/icon-arrow-left.svg";
+import arrowRight from "../assets/icon-arrow-right.svg";
+
 function Slider() {
   return (
     <div className="slider">
@@ -9,8 +12,12 @@ function Slider() {
         <img src="" alt="" className="slider__img" />
       </div>
       <div className="slider__controls">
-        <button className="slider__btn btn-left"></button>
-        <button className="slider__btn btn-right"></button>
+        <button className="slider__btn arrow">
+          <img src={arrowLeft} alt="" className="arrow__img" />
+        </button>
+        <button className="slider__btn arrow">
+          <img src={arrowRight} alt="" className="arrow__img" />
+        </button>
       </div>
     </div>
   );

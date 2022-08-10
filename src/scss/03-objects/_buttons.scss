@@ -1,1 +1,52 @@
 @use "./../01-abstracts/" as *;
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.btn1,
+.btn2 {
+  color: white;
+  border-radius: 28px;
+  padding: 14px 45px;
+  font-weight: bold;
+  font-size: rem(16px);
+}
+
+.btn1 {
+  background-color: $color-black;
+  &:hover {
+    background-color: $color-red;
+  }
+}
+
+.btn2 {
+  background-color: $color-violet;
+  &:hover {
+    background-color: $color-orange;
+  }
+}
+
+.arrow {
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  background-color: $color-black;
+
+  &__img {
+    width: 15px;
+    display: inline;
+  }
+
+  &:hover {
+    background-color: $color-violet;
+  }
+}

@@ -27,9 +27,13 @@ h1 {
 
 h2 {
   color: $color-black;
-  font-size: rem(40px);
-  line-height: 51px;
   font-weight: bold;
+  font-size: rem(26px);
+  line-height: 33px;
+  @include breakpoint($md) {
+    font-size: rem(40px);
+    line-height: 51px;
+  }
 }
 
 h3 {

@@ -1,7 +1,9 @@
+import profileImg from "../assets/image-amy.webp";
+
 function Profile() {
   return (
     <section className="profile">
-      <img src="" alt="Amy's portrait" className="profile__img" />
+      <img src={profileImg} alt="Amy's portrait" className="profile__img" />
       <div className="profile__main">
         <h2 className="profile__title">
           I’m Amy, and I’d love to work on your next project

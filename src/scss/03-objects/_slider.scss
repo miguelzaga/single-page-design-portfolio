@@ -1,0 +1,23 @@
+@use "./../01-abstracts/" as *;
+
+.slider {
+  position: relative;
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 32px;
+  }
+
+  &__img {
+    border-radius: 10px;
+    max-width: 270px;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}

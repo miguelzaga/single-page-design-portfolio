@@ -1,0 +1,9 @@
+@use "./../01-abstracts/" as *;
+.work {
+  text-align: center;
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+}

@@ -1,16 +1,26 @@
 @use "./../01-abstracts/" as *;
 
 .slider {
-  position: relative;
-
   &__main {
+    position: relative;
+    margin-bottom: 32px;
+    min-height: 180px;
+    text-align: center;
+  }
+
+  &__viewport {
+    position: absolute;
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 32px;
+    width: 100%;
+    max-height: 180px;
+    // margin-left: calc(0 * (270px + 16px)); // slider logic
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
   &__img {
+    display: inline;
     border-radius: 10px;
     max-width: 270px;
   }

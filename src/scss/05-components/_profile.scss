@@ -21,4 +21,21 @@
   &__text {
     margin-bottom: 24px;
   }
+
+  @include breakpoint(calc($md + 100px)) {
+    flex-direction: row;
+    margin-bottom: 120px;
+    gap: 69px;
+    justify-content: flex-end;
+
+    &__img {
+      max-width: 364px;
+      align-self: center;
+    }
+
+    &__main {
+      min-width: 339px;
+      text-align: left;
+    }
+  }
 }

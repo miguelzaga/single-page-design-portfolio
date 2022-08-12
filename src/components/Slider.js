@@ -15,7 +15,9 @@ function Slider() {
       <figure className="slider__main">
         <div
           className="slider__viewport"
-          style={{ marginLeft: `${(slide - 2) * (270 + 16)}px` }}
+          style={{
+            marginLeft: `${(slide - 2) * (270 + 16)}px`,
+          }} /* --------        nSlide * (slideWidth + gap)  */
         >
           <img src={img1} alt="" className="slider__img" />
           <img src={img2} alt="" className="slider__img" />

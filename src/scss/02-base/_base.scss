@@ -9,3 +9,9 @@ body {
 .wrapper {
   padding: 16px 16px 32px;
 }
+
+@include breakpoint($md) {
+  .wrapper {
+    padding: 34px 40px 56px 39px;
+  }
+}

@@ -7,6 +7,9 @@
 
   &__img {
     max-width: 48px;
+    @include breakpoint($md) {
+      max-width: 64px;
+    }
   }
 }
 

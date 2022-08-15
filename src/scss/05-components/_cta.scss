@@ -7,6 +7,9 @@
   padding: 49px 24px 48px;
   margin-bottom: 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__title {
     color: $color-cream;
@@ -27,6 +30,26 @@
 
     &__text {
       margin-bottom: 26px;
+    }
+  }
+
+  @include breakpoint($lg) {
+    flex-direction: row;
+    text-align: left;
+    gap: 182px;
+
+    padding: 81px 95px 80px 65px;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      margin-bottom: 0;
+    }
+
+    &__btn {
+      min-width: 228px;
     }
   }
 }

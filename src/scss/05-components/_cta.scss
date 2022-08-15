@@ -16,4 +16,17 @@
   &__text {
     margin-bottom: 24px;
   }
+
+  @include breakpoint($md) {
+    padding: 56px 75px 64px;
+    margin-bottom: 56px;
+
+    &__title {
+      margin-bottom: 26px;
+    }
+
+    &__text {
+      margin-bottom: 26px;
+    }
+  }
 }

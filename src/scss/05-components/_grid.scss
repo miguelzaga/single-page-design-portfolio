@@ -81,4 +81,22 @@
       }
     }
   }
+
+  @include breakpoint($lg) {
+    grid-template-columns: repeat(6, 1fr);
+    // grid-template-rows: 182px 158px;
+    margin-bottom: 136px;
+
+    &__cell {
+      &-5 {
+        grid-column: 5 / 7;
+        grid-row: 1 / 2;
+      }
+
+      &-6 {
+        grid-column: 5 / 7;
+        gap: 16px;
+      }
+    }
+  }
 }

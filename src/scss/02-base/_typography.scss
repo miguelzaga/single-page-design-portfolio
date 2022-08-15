@@ -20,6 +20,11 @@ h1 {
   font-weight: bold;
 
   @include breakpoint($md) {
+    font-size: rem(44px);
+    line-height: 44px;
+  }
+
+  @include breakpoint($lg) {
     font-size: rem(56px);
     line-height: 70px;
   }
@@ -30,7 +35,13 @@ h2 {
   font-weight: bold;
   font-size: rem(26px);
   line-height: 33px;
+
   @include breakpoint($md) {
+    font-size: rem(32px);
+    line-height: 40px;
+  }
+
+  @include breakpoint($lg) {
     font-size: rem(40px);
     line-height: 51px;
   }
@@ -42,37 +53,3 @@ h3 {
   line-height: 40px;
   font-weight: bold;
 }
-
-@include breakpoint($md) {
-  body {
-    font-size: $font-size;
-    line-height: 28px;
-  }
-
-  h1 {
-    font-size: rem(44px);
-    line-height: 44px;
-  }
-
-  h2 {
-    font-size: rem(32px);
-    line-height: 40px;
-  }
-}
-
-// @include breakpoint($lg) {
-//   body {
-//     font-size: $font-size;
-//     line-height: 28px;
-//   }
-
-//   h1 {
-//     font-size: rem(56px);
-//     line-height: 70px;
-//   }
-
-//   h2 {
-//     font-size: rem(40px);
-//     line-height: 51px;
-//   }
-// }

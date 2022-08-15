@@ -6,12 +6,19 @@ body {
   overflow-x: hidden;
 }
 
-.wrapper {
+body {
   padding: 16px 16px 32px;
-}
 
-@include breakpoint($md) {
-  .wrapper {
+  @include breakpoint($md) {
     padding: 34px 40px 56px 39px;
   }
+
+  @include breakpoint($lg) {
+    padding-bottom: 64px;
+  }
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: auto;
 }

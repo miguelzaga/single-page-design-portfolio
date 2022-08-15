@@ -22,4 +22,15 @@
       margin-bottom: 64px;
     }
   }
+
+  @include breakpoint($lg) {
+    &__title {
+      margin-bottom: 23px;
+    }
+
+    &__text {
+      max-width: 730px;
+      margin-bottom: 80px;
+    }
+  }
 }

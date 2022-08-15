@@ -7,4 +7,12 @@
   &__title {
     margin-bottom: 32px;
   }
+
+  @include breakpoint($md) {
+    margin-bottom: 120px;
+
+    &__title {
+      margin-bottom: 56px;
+    }
+  }
 }

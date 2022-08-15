@@ -2,24 +2,14 @@
 
 .slider {
   &__main {
-    position: relative;
     margin-bottom: 32px;
     min-height: 180px;
-    text-align: center;
-  }
-
-  &__viewport {
-    position: absolute;
     display: flex;
     justify-content: center;
     gap: 15px;
-    width: 100%;
-    max-height: 180px;
-    transition: 0.4s ease-out;
   }
 
   &__img {
-    display: inline;
     border-radius: 10px;
     max-width: 270px;
   }
@@ -28,5 +18,20 @@
     display: flex;
     justify-content: center;
     gap: 16px;
+  }
+
+  @include breakpoint($md) {
+    &__main {
+      margin-bottom: 56px;
+      //   min-height: 180px;
+      //   text-align: center;
+      //   display: flex;
+      //   justify-content: center;
+      gap: 30px;
+    }
+
+    &__img {
+      max-width: 360px;
+    }
   }
 }

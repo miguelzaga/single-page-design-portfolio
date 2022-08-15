@@ -15,4 +15,8 @@
       margin-bottom: 56px;
     }
   }
+
+  @include breakpoint($md) {
+    margin-bottom: 88px;
+  }
 }

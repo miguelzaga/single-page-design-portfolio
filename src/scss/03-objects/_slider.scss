@@ -30,4 +30,10 @@
       max-width: 360px;
     }
   }
+
+  @include breakpoint($lg) {
+    &__img {
+      max-width: 540px;
+    }
+  }
 }

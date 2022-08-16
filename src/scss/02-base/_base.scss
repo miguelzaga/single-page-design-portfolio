@@ -7,18 +7,28 @@ body {
 }
 
 body {
-  padding: 16px 16px 32px;
+  margin: 16px 0 32px;
 
   @include breakpoint($md) {
-    padding: 34px 40px 56px 39px;
+    margin: 34px 0 56px;
   }
 
   @include breakpoint($lg) {
-    padding-bottom: 64px;
+    margin-bottom: 64px;
   }
 }
 
-.wrapper {
-  max-width: 1110px;
-  margin: auto;
+header,
+footer,
+section {
+  margin: 0 16px;
+
+  @include breakpoint($md) {
+    margin: 0 40px 0 39px;
+  }
+
+  @include breakpoint(calc($lg + 180px)) {
+    max-width: 1110px;
+    margin: auto;
+  }
 }

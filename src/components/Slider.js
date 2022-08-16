@@ -28,32 +28,24 @@ function Slider() {
         <button
           className="slider__btn arrow"
           aria-label="click for the previous image"
+          onClick={function moveSlideLeft() {
+            if (slide > 0) {
+              setSlide(slide - 1);
+            }
+          }}
         >
-          <img
-            src={arrowLeft}
-            alt=""
-            className="arrow__img"
-            onClick={function moveSlideLeft() {
-              if (slide > 0) {
-                setSlide(slide - 1);
-              }
-            }}
-          />
+          <img src={arrowLeft} alt="" className="arrow__img" />
         </button>
         <button
           className="slider__btn arrow"
           aria-label="click for the next image"
+          onClick={function moveSlideLeft() {
+            if (slide < images.length - 1) {
+              setSlide(slide + 1);
+            }
+          }}
         >
-          <img
-            src={arrowRight}
-            alt=""
-            className="arrow__img"
-            onClick={function moveSlideRight() {
-              if (slide < images.length - 1) {
-                setSlide(slide + 1);
-              }
-            }}
-          />
+          <img src={arrowRight} alt="" className="arrow__img" />
         </button>
       </div>
     </div>

@@ -3,10 +3,11 @@ import HeaderFooter from "./components/HeaderFooter";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Profile from "./components/Profile";
+import React from "react";
 
 function App() {
   return (
-    <div>
+    <React.StrictMode>
       <header className="header">
         <HeaderFooter></HeaderFooter>
       </header>
@@ -19,7 +20,7 @@ function App() {
       <footer className="footer">
         <HeaderFooter></HeaderFooter>
       </footer>
-    </div>
+    </React.StrictMode>
   );
 }
 

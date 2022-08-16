@@ -7,7 +7,7 @@ import React from "react";
 
 function App() {
   return (
-    <React.StrictMode>
+    <div>
       <header className="header">
         <HeaderFooter></HeaderFooter>
       </header>
@@ -20,7 +20,7 @@ function App() {
       <footer className="footer">
         <HeaderFooter></HeaderFooter>
       </footer>
-    </React.StrictMode>
+    </div>
   );
 }
 

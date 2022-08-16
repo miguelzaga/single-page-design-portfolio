@@ -2,7 +2,6 @@
   "name": "single-page-design-portfolio",
   "version": "1.0.0",
   "description": "This is a solution to the Single-page design portfolio challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects. ",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
